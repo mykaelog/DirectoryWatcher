@@ -1,7 +1,8 @@
 ﻿Imports System.IO
 
 Class DriveNode
-    Inherits FileSystemNode
+    Inherits DirectoryTreeNode
+
 
     Private m_drive As DriveInfo
 

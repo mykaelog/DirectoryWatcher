@@ -14,4 +14,10 @@ Class FileSystemNode
         Me.m_nodeType = nodeType
     End Sub
 
+    Public ReadOnly Property NodeType
+        Get
+            Return Me.m_nodeType
+        End Get
+    End Property
+        
 End Class

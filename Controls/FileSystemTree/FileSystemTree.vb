@@ -144,11 +144,16 @@ Public Class FileSystemTree
 
         Dim rootNode = Me.ResolveRootNode()
 
+        If (rootNode.NodeType = FileSystemNodeType.Computer) Then
+            'Logica para los discos dependiendo de su configuracion(visible, systema, etc)
+        Else
+            'Logica para disco concreto mirar si esta listo y crear arbol
+        End If
 
 
     End Sub
 
-    <Description("Resolve RootNode, which can be my computer or drive node.")
+    <Description("Resolve RootNode, which can be my computer or drive node.")>
     Private Function ResolveRootNode() As FileSystemNode
 
         If (String.IsNullOrWhiteSpace(Me.RootDrive)) Then

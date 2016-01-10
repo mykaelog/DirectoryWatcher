@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FileSystemTree\ComputerNode.vb" />
+    <Compile Include="FileSystemTree\DirectoryTreeNode.vb" />
     <Compile Include="FileSystemTree\DriveNode.vb" />
     <Compile Include="FileSystemTree\FileSystemNode.vb" />
     <Compile Include="FileSystemTree\FileSystemNodeType.vb" />
